@@ -1,8 +1,7 @@
 {
   "name": "web3jsmock",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "license": "CC0",
   "dependencies": {
     "openzeppelin-solidity": "^2.5.0",
     "truffle": "^5.1.19",
@@ -13,7 +12,9 @@
     "jest": "truffle compile && jest"
   },
   "jest": {
-    "testMatch": ["**/__tests__/**/*.spec.[jt]s?(x)"],
+    "testMatch": [
+      "**/__tests__/**/*.spec.[jt]s?(x)"
+    ],
     "moduleFileExtensions": [
       "js",
       "ts",
@@ -21,8 +22,11 @@
     ]
   },
   "devDependencies": {
-    "jest": "^25.2.7",
     "chai": "^4.2.0",
+    "jest": "^25.2.7",
     "sinon": "^9.0.1"
-  }
+  },
+  "description": "The sample of the web3.js mocking.",
+  "repository": "https://github.com/nakajo2011/web3jsmock.git",
+  "author": "Yukishige Nakajo <nakajo@chaintope.com>"
 }
