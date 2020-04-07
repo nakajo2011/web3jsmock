@@ -1,0 +1,28 @@
+{
+  "name": "web3jsmock",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "openzeppelin-solidity": "^2.5.0",
+    "truffle": "^5.1.19",
+    "web3": "^1.2.6"
+  },
+  "scripts": {
+    "app_test": "truffle compile && mocha test/app/**/*.spec.js",
+    "jest": "truffle compile && jest"
+  },
+  "jest": {
+    "testMatch": ["**/__tests__/**/*.spec.[jt]s?(x)"],
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "json"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^25.2.7",
+    "chai": "^4.2.0",
+    "sinon": "^9.0.1"
+  }
+}
